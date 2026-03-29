@@ -1,0 +1,41 @@
+<html><style type='text/css'>
+html {
+    font-family: Arial;
+    font-size: 16px;
+}
+r {
+    color: #ff0000;
+}
+b {
+    color: #0000ff;
+}
+</style><p><pre>0: Vacio            :CONSTANTE EQU $1789</pre></p>
+<p><pre>1: Vacio            :VAR EQU $0000</pre></p>
+<p><pre>2: Vacio            :VAR1 EQU $0002</pre></p>
+<p><pre>3: Vacio            :VAR2 EQU $0003</pre></p>
+<p><pre>4: Vacio            :ORG $8000</pre></p>
+<p><pre>5: Vacio            :</pre></p>
+<p><pre>6: Vacio            :INICIO LDX #CONSTANTE</pre></p>
+<p><pre>7: Vacio            :</pre></p>
+<p><pre>8: Vacio            :SALTO NOP</pre></p>
+<p><pre>9: 8000 <r>01</r><b></b>          :      NOP</pre></p>
+<p><pre>10: Vacio           :</pre></p>
+<p><pre>11: Vacio           :SALTO1 NOP</pre></p>
+<p><pre>12: 8001 <r>01</r><b></b>         :       NOP</pre></p>
+<p><pre>13: Vacio           :</pre></p>
+<p><pre>14: Vacio           :SALTO2 NOP</pre></p>
+<p><pre>15: 8002 <r>01</r><b></b>         :       NOP</pre></p>
+<p><pre>16: 8003 <r>09</r><b></b>         :       DEX</pre></p>
+<p><pre>17: 8004 <r>26</r><b>FA</b>       :       BNE SALTO</pre></p>
+<p><pre>18: 8006 <r>22</r><b>F9</b>       :       BHI SALTO1</pre></p>
+<p><pre>19: 8008 <r>13</r><b>0780F6</b>   :       BRCLR $07,#$80 SALTO2</pre></p>
+<p><pre>20: 800C <r>1F</r><b>05AA16</b>   :       BRCLR $05,X,#$AA SALTE</pre></p>
+<p><pre>21: 8010 <r>12</r><b>7C3312</b>   :       BRSET $7C,#$33 SALTE</pre></p>
+<p><pre>22: 8014 <r>181E</r><b>89400D</b> :       BRSET $89,Y,#$40 SALTE</pre></p>
+<p><pre>23: 8019 <r>15</r><b>5577</b>     :       BCLR $55,#$77</pre></p>
+<p><pre>24: 801C <r>14</r><b>4980</b>     :       BSET $49,#$80</pre></p>
+<p><pre>25: 801F <r>1D</r><b>7088</b>     :       BCLR $70,X,#$88</pre></p>
+<p><pre>26: 8022 <r>181C</r><b>917C</b>   :       BSET $91,Y,#$7C</pre></p>
+<p><pre>27: Vacio           :</pre></p>
+<p><pre>28: Vacio           :SALTE JMP INICIO</pre></p>
+<p><pre>29: Vacio           :      END</pre></p></html>
